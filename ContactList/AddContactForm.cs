@@ -36,5 +36,10 @@ namespace ContactList
         {
 
         }
+
+        private void HoVaTen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
