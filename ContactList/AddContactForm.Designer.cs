@@ -33,11 +33,14 @@
             this.HoVaTen = new System.Windows.Forms.Label();
             this.sodth = new System.Windows.Forms.Label();
             this.Luu = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // HoTen
             // 
             this.HoTen.Location = new System.Drawing.Point(211, 105);
+            this.HoTen.Multiline = true;
             this.HoTen.Name = "HoTen";
             this.HoTen.Size = new System.Drawing.Size(431, 22);
             this.HoTen.TabIndex = 0;
@@ -71,18 +74,37 @@
             // 
             // Luu
             // 
-            this.Luu.Location = new System.Drawing.Point(336, 236);
+            this.Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Luu.Location = new System.Drawing.Point(318, 281);
             this.Luu.Name = "Luu";
-            this.Luu.Size = new System.Drawing.Size(75, 23);
+            this.Luu.Size = new System.Drawing.Size(123, 45);
             this.Luu.TabIndex = 4;
             this.Luu.Text = "Lưu";
             this.Luu.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(211, 208);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(431, 22);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(98, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Email";
             // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Luu);
             this.Controls.Add(this.sodth);
             this.Controls.Add(this.HoVaTen);
@@ -103,5 +125,7 @@
         private System.Windows.Forms.Label HoVaTen;
         private System.Windows.Forms.Label sodth;
         private System.Windows.Forms.Button Luu;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
